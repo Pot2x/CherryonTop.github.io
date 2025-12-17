@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login - Cherry on Top</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('Design/Chess.svg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-card {
+    background: rgba(248, 247, 227, 0.95);
+    padding: 30px 25px;
+    border-radius: 15px;
+    border: 5px solid #7D8086;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #EE4F70;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #7D8086;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-login {
+    background-color: #EE4F70;
+    color: #EEE980;
+    border: 2px solid #7D8086;
+    border-radius: 15px;
+    width: 100%;
+    font-family: 'DM Serif Text', serif;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.btn-login:hover {
+    background-color: #E30B5D;
+    color: #EEE980;
+    transform: scale(1.05);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    border: 3px solid #EE4F70;
+    border-radius: 50%;
+}
+
+</style>
+</head> 
+<body>
+
+<div class="login-wrapper">
+    <div class="login-card">
+        <h2>Login to Your Work Account</h2>
+
+        <div class ="logo"><img src="Design/Logo.png" alt="Logo"></div>
+        <form action="connect.php" method="POST">
+            <label for="User" class="form-label">Username</label>
+            <input type="text" class="form-control" name="User" required>
+
+            <label for="Passkey" class="form-label">Password</label>
+            <input type="password" class="form-control" name="Passkey" required>
+
+            <button type="submit" class="btn btn-login mt-3">Login</button>
+        </form>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No fields</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background-image: url('Design/Chess.svg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.success-container {
+    background: rgba(248, 247, 227, 0.95);
+    border: 10px solid #7D8086;
+    border-radius: 20px;
+    padding: 40px 50px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.success-container img {
+    width: 110px;
+    border: 4px solid #EE4F70;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.success-container h1 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 48px;
+    color: #EE4F70;
+    margin-bottom: 10px;
+}
+
+.success-container p {
+    font-family: 'DM Serif Text', serif;
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.success-container button {
+    background-color: #EE4F70;
+    color: #EEE980;
+    border: 2px solid #7D8086;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-family: 'DM Serif Text', serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.success-container button:hover {
+    background-color: #E30B5D;
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="success-container">
+    <img src="Design/Logo.png" alt="Logo">
+    <h1>Failed!</h1>
+    <p>No fields are changed.</p>
+
+    <button onclick="location.href='menu.php'">
+        Back to Menu
+    </button>
+</div>
+
+</body>
+</html>
